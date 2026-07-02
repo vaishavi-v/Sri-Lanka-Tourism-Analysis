@@ -74,7 +74,7 @@ st.markdown("---")
 col_left, col_right = st.columns(2)
 
 with col_left:
-    st.subheader("✈️ Tourist Arrivals Over Time")
+    st.subheader(" Tourist Arrivals Over Time")
     fig1, ax1 = plt.subplots(figsize=(8, 4))
     ax1.plot(filtered_df["year"], filtered_df["total_arrivals"], marker="o", color="steelblue", linewidth=2)
     ax1.fill_between(filtered_df["year"], filtered_df["total_arrivals"], alpha=0.2, color="steelblue")
@@ -105,7 +105,7 @@ with col_left2:
     st.pyplot(fig3)
 
 with col_right2:
-    st.subheader("💎 Revenue Per Tourist")
+    st.subheader("Revenue Per Tourist")
     fig4, ax4 = plt.subplots(figsize=(8, 4))
     ax4.plot(filtered_df["year"], filtered_df["revenue_per_tourist"], marker="o", color="green", linewidth=2)
     ax4.fill_between(filtered_df["year"], filtered_df["revenue_per_tourist"], alpha=0.2, color="green")
@@ -114,4 +114,4 @@ with col_right2:
     st.pyplot(fig4)
 
 st.markdown("---")
-st.markdown("** Built by Vaishavi | BSc IT (Data Science) | SLIIT**")
+st.markdown(" Built by Vaishavi | BSc IT (Data Science) | SLIIT")
